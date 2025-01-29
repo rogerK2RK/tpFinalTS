@@ -1,4 +1,4 @@
-import { NavLink } from '@atoms/NavLink';
+import { NavLink } from '@atoms/index';
 import './NavBar.css';
  
 export const NavBar: React.FC = () => {

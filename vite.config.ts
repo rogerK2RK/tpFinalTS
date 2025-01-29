@@ -14,6 +14,9 @@ export default defineConfig({
       "@molecules": "/src/components/molecules",
       "@organisms": "/src/components/organisms",
       "@atoms": "/src/components/atoms",
+      "@store": "/src/store",
+      "@api": "/src/api",
+      "@types": "/src/types",
     },
   },
 });

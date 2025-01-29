@@ -27,9 +27,12 @@
       "@molecules/*": ["components/molecules/*"],
       "@organisms/*": ["components/organisms/*"],
       "@pages/*": ["components/pages/*"],
+      "@api/*": ["api/*"],
+      "@types/*": ["types/*"],
 
       "@store/*": ["store/*"]
     }
   },
-  "include": ["src"]
+  "include": ["src", "src/types"]
+  
 }

@@ -2,18 +2,14 @@ import axios from "axios";
 
 const API_URL = "https://api.escuelajs.co/api/v1/products";
 
-// Get all Products
+// Fonction pour récupérer tous les produits
 export const fetchProducts = async () => {
-  try {
-    const response = await axios.get(API_URL);
-    return response.data;
-  } catch (error) {
-    console.error(error);
-  }
+  const response = await axios.get(API_URL);
+  return response.data;
 };
 
-// Get Product by ID
+// Fonction pour récupérer un produit par son ID
 export const fetchProductById = async (id: string | number) => {
-    const response = await axios.get(`${API_URL}/${id}`);
-    return response.data;
-  };
+  const response = await axios.get(`${API_URL}/${id}`);
+  return response.data;
+};
