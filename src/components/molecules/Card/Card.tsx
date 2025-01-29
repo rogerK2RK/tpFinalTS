@@ -1,4 +1,4 @@
-import { Pict, Texte } from '@atoms/index';
+import { Pict, Texte, Button } from '@atoms/index';
 import './Card.css';
  
 export const Card: React.FC = () => {
@@ -11,6 +11,7 @@ export const Card: React.FC = () => {
                 <Texte value="Nom"/>
                 <Texte value="Prix"/>
                 <Texte value="Catégorie"/>
+                <Button label="Ajouter au panier"/>
             </div>
         </div>
     );
