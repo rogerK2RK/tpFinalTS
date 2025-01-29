@@ -1,6 +1,7 @@
 import { NavLink } from '@atoms/NavLink';
+import './NavBar.css';
  
-export const NavBar = () => {
+export const NavBar: React.FC = () => {
     return (
         <nav className="navbar">
             <NavLink to="/" label="Home" />

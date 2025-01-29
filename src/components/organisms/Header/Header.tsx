@@ -1,9 +1,9 @@
-import { Navbar } from '@molecules/Navbar'; // Importing Navbar component from molecules    
+import { NavBar } from "@molecules/NavBar"; 
 
-export const Header = () => {
+export const Header: React.FC = () => {
   return (
     <header className='header'>
-      <Navbar />
+      <NavBar />
     </header>
   );
 };
