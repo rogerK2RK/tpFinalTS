@@ -1,9 +1,22 @@
 import { Card } from "@molecules/Card"; 
+import { Product } from "../../../types/Product";
 
-export const Cards: React.FC = () => {
+interface CardsProps {
+  products: Product[];
+}
+
+export const Cards: React.FC<CardsProps> = ({ products = [] }) => {
+
+  console.log("Products:", products);
   return (
-    <header className='Card'>
-      <Card />
-    </header>
+    <div className='Card'>
+      {products.length > 0 ? (
+        products.map((product) => (
+        <Card key={product.id} product={product} />
+        ))
+      ):(
+      <p>Chargement des produits...</p>
+      )}
+    </div>
   );
 };

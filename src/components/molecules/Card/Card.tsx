@@ -1,16 +1,22 @@
-import { Pict, Texte, Button } from '@atoms/index';
+import { Pict, Button } from '@atoms/index';
 import './Card.css';
+import { Product } from "../../../types/Product";
+
+interface CardProps {
+     product: Product;
+}
  
-export const Card: React.FC = () => {
+export const Card: React.FC<CardProps> = ({ product }) => {
     return (
         <div className="card">
             <div className="card-image">
-                <Pict src="https://via.placeholder.com/150" alt="placeholder" />
+                <Pict src={product.images[0]} alt={product.title} />
             </div>
             <div className="card-content">
-                <Texte value="Nom"/>
-                <Texte value="Prix"/>
-                <Texte value="Catégorie"/>
+                <h2>{product.title}</h2>
+                <p>Description</p>
+                <p>{`Catégorie: ${product.category.name}`}</p>
+                <p>{`Prix: ${product.price} €`}</p>
                 <Button label="Ajouter au panier"/>
             </div>
         </div>

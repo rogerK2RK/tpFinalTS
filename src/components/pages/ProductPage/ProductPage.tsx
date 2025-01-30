@@ -1,16 +1,26 @@
 import { Header } from "@organisms/Header";
 import { Cards } from "@organisms/Cards";
 import "./ProductPage.css";
+import { useEffect } from "react";
+import { useProductStore } from "../../../store/useProductStore";
+
+
 
 export const ProductPage: React.FC = () => {
+  const { products, fetchProducts } = useProductStore();
 
+  useEffect(() => {
+    fetchProducts();
+  }, []);
+
+  console.log("Produits depuis Zustand:", products);
 
   return (
     <div>
       <Header />
       <section className="container">
         <h1 className="title">Product Page</h1>
-        <Cards />
+        <Cards products={products}/>
       </section>
     </div>
   );
