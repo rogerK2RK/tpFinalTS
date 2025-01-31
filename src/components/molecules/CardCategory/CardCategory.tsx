@@ -12,7 +12,7 @@ export const CardCategory: React.FC<CardCategoryProps> = ({ category }) => {
 
     const navigate = useNavigate();
     const handleClick = () => {
-        navigate(tpFinalTS/category/${category.id}`);
+        navigate(`/tpFinalTS/category/${category.id}`);
     }
 
     return (
