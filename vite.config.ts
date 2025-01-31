@@ -8,7 +8,7 @@ export default defineConfig({
     react(),
     tsconfigPaths() 
   ],
-  base: '/tpFinalTS',
+  base: '/tpFinalTS/',
   resolve: {
     alias: {
       "@pages": "/src/components/pages",
