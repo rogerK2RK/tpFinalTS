@@ -1,7 +1,7 @@
-.card {
+.card-catogory {
     display: flex;
     flex-direction: column;
-    width: 25rem;
+    width: 15rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -9,17 +9,17 @@
     cursor: pointer;
 }
 
-.card-image, img {
+.card-catogory-image img{
     width: 100%;
-    height: 25rem;
+    height: 15rem;
     object-fit: cover;
 }
 
-.card-content {
+.card-catogory-content {
     padding: 20px;
 }
 
-.card-content-title {
+.card-catogory-content-title {
     font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 10px;

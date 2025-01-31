@@ -1,0 +1,29 @@
+.product-detail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2px;
+  margin: 5rem 5rem;
+  height: 30rem;
+}
+
+.product-detail-image img {
+  width: 30rem;
+  height: 30rem;
+}
+
+.product-detail-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30rem;
+  height: 30rem;
+  margin-left: 5rem;
+}
+
+.product-detail button {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  width: 10rem;
+}

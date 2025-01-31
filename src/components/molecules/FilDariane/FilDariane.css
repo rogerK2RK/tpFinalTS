@@ -1,0 +1,32 @@
+.fil-dariane {
+    margin: 10px 0;
+  }
+  
+  .fil-dariane ul {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+  }
+  
+  .fil-dariane li {
+    display: inline;
+  }
+  
+  .fil-dariane li::after {
+    content: " / ";
+    margin: 0 5px;
+  }
+  
+  .fil-dariane li:last-child::after {
+    content: "";
+  }
+  
+  .fil-dariane a {
+    text-decoration: none;
+    color: blue;
+  }
+  
+  .fil-dariane a:hover {
+    text-decoration: underline;
+  }
+  
