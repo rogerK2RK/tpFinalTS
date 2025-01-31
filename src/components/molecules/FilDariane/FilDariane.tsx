@@ -9,7 +9,7 @@ export const FilDariane: React.FC = () => {
     <nav className="fil-dariane">
       <ul>
         <li>
-          <Link to="/">Accueil</Link>
+          <Link to="/tpFinalTS/">Accueil</Link>
         </li>
         {pathnames.map((value, index) => {
           const to = `/${pathnames.slice(0, index + 1).join("/")}`;
