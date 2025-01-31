@@ -14,7 +14,7 @@ export const Card: React.FC<CardProps> = ({ product }) => {
 
     return (
         <div className="card">
-            <Link to={`tpFinalTS/products/${product.id}`}>
+            <Link to={`/tpFinalTS/products/${product.id}`}>
                 <div className="card-image">
                     <Pict 
                         src={imageSrc} 
