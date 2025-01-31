@@ -6,6 +6,7 @@ import { Header } from "@organisms/Header";
 import { Category } from "../../../types/Category";
 import axios from "axios";
 import { Categorys } from "@organisms/Categorys";
+import { FilDariane } from "@molecules/FilDariane/FilDariane";
 
 
 export const CategoryPage: React.FC = () => {
@@ -33,6 +34,7 @@ export const CategoryPage: React.FC = () => {
     <div>
       <Header/>
       <Categorys />
+      <FilDariane />
       <h1>{categoryName ? `Produits de la catégorie : ${categoryName}` : "Chargement..."}</h1>
       <Cards products={products} />
     </div>

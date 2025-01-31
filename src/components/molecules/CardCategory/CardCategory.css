@@ -1,7 +1,6 @@
 .card-catogory {
     display: flex;
-    flex-direction: column;
-    width: 15rem;
+    height: 5rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -10,13 +9,16 @@
 }
 
 .card-catogory-image img{
-    width: 100%;
-    height: 15rem;
+    width: 5rem;
+    height: 5rem;
     object-fit: cover;
 }
 
 .card-catogory-content {
+    display: flex;
     padding: 20px;
+    text-align: center;
+    align-items: center;
 }
 
 .card-catogory-content-title {
